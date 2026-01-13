@@ -1,42 +1,57 @@
-# Dependencies
-node_modules/
-npm-debug.log*
-yarn-error.log*
+node_modules
 
-# Build artifacts
-dist/
-build/
-.next/
-out/
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
 
-# Runtime & environment
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+!.env.test
 
-# IDE & editor
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Claude Flow Runtime
+.claude-flow/daemon-state.json
+.claude-flow/daemon.pid
+.claude-flow/logs/
+.claude-flow/metrics/
+.claude-flow/tasks/
+.claude-flow/data/cache/
+.claude/memory.db
+
+# Swarm Runtime
+.swarm/memory.db
+.swarm/schema.sql
+.swarm/daemon-state.json
+
+# npm
+.npmrc
+package-lock.json
+yarn.lock
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-.DS_Store
 
-# Claude Flow V3 runtime
-.claude-flow/daemon-state.json
-.claude-flow/daemon.pid
-.claude-flow/logs/
-.claude-flow/metrics/
-.claude-flow/data/cache/
-
-# Test coverage
+# Test Coverage
 coverage/
 .nyc_output/
 
 # Cache
 .cache/
 .eslintcache
-
-# Temporary files
-*.tmp
-*.bak
