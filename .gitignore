@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
+.next/
+out/
+
+# Runtime & environment
+.env
+.env.local
+.env.*.local
+
+# IDE & editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Claude Flow V3 runtime
+.claude-flow/daemon-state.json
+.claude-flow/daemon.pid
+.claude-flow/logs/
+.claude-flow/metrics/
+.claude-flow/data/cache/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.eslintcache
+
+# Temporary files
+*.tmp
+*.bak
